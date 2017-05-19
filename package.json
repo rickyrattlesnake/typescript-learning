@@ -1,0 +1,16 @@
+{
+  "name": "typescript-learning",
+  "version": "1.0.0",
+  "description": "Experimentation with TS",
+  "main": "app.js",
+  "repository": "https://github.com/rickyrattlesnake/typescript-learning.git",
+  "author": "Ricky Ratnayake <ricky.ratnayake@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "node ./node_modules/typescript/bin/tsc app.ts --outDir dist",
+    "start": "node ./dist/app.js"
+  },
+  "dependencies": {
+    "typescript": "^2.3.2"
+  }
+}
