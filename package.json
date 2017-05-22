@@ -7,10 +7,15 @@
   "author": "Ricky Ratnayake <ricky.ratnayake@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "tsc": "node ./node_modules/typescript/bin/tsc app.ts --outDir dist",
+    "tsc": "node ./node_modules/typescript/bin/tsc src/app.ts --outDir dist",
+    "test": "npm run tsc && node ./node_modules/mocha/bin/mocha dist/*.js",
     "start": "node ./dist/app.js"
   },
   "dependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^4.0.0-canary.1",
+    "mocha": "^3.4.1",
     "typescript": "^2.3.2"
   }
 }
